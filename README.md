@@ -11,7 +11,7 @@ My aim in the visual design of the site was to reflect the elegance of fine dini
 
 The index page in particular is leans into this by presenting a full-height image of a delicious-looking plate of food, with the only other elements being a title and sub-title, along with a down arrow at the bottom of the page to help users to understand that they can scroll down to see more. I considered using content-peeking here but I really wanted to stick to the idea of keeping the image taking up the full height of the viewport.
 
-I also chose to leave the header / nav bar off this page which sacrifices a small amount of user navigation in order to better fit with the visual design I desired. The user is still able to easily find the information that they need as the elements below this image provide links to all of the available pages.
+I originally intended to leave the header / nav bar off this page which would have better fit with my design vision, but I didn't want to sacrifice usability and the ability for users to quickly and easily find the information they want. Therefore I chose to keep the header consistent across each page.
 
 I sourced high-resolution, visually striking images from [Unsplash](https://unsplash.com/) which has a permissive license allowing both commercial and non-commercial use with no permission. I have credited the photographers in this README.
 
