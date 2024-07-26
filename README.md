@@ -6,6 +6,7 @@ Users of this website will be able to find all the information they need to know
 ## Features
 
 ## Design
+### Design Philisophy
 My aim in the visual design of the site was to reflect the elegance of fine dining. I made use of a simple greyscale colour scheme for text elements, whilst using visually striking images of food in colour to create visual interest.
 
 The index page in particular is leans into this by presenting a full-height image of a delicious-looking plate of food, with the only other elements being a title and sub-title, along with a down arrow at the bottom of the page to help users to understand that they can scroll down to see more. I considered using content-peeking here but I really wanted to stick to the idea of keeping the image taking up the full height of the viewport.
@@ -13,6 +14,16 @@ The index page in particular is leans into this by presenting a full-height imag
 I also chose to leave the header / nav bar off this page which sacrifices a small amount of user navigation in order to better fit with the visual design I desired. The user is still able to easily find the information that they need as the elements below this image provide links to all of the available pages.
 
 I sourced high-resolution, visually striking images from [Unsplash](https://unsplash.com/) which has a permissive license allowing both commercial and non-commercial use with no permission. I have credited the photographers in this README.
+
+### Responsiveness
+I used a mobile-first process where I developed the site first to display properly on mobile devices, and then added media queries to scale-up where needed if the mobile site did not display properly on tablet, laptop and desktop devices.
+
+I used optimised images in a .webp format and served different-sized images to users based on the size of their display. Because of the mobile-first design, the default image served is the smallest available, and then media queries were used to serve larger images to devices with larger screens. As a general rule, for images expected to take up the whole width of the viewport (such as the index hero image), I used the following sizes:
+- Small (sm) 575px wide
+- Medium (md) 767px wide
+- Large (lg) 1439px wide
+- Extra large (xl) 1920px wide
+- Original (og) original resolution to account for extremely large devices such as ultrawide monitors
 
 ## Project Management
 I used GitHub projects to help me to manage the development of the site. Although I was working alone, this still made it easier to break down the development into manageable tasks, which I could prioritise and complete in a sensible order.
