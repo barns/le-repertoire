@@ -27,7 +27,9 @@ The GitHub project can be accessed [here](https://github.com/users/barns/project
 ## Deployment
 The site was deployed to GitHub pages. I deployed the site very early on in the project and then continued to deploy subsequent iterations in order to ensure that I had a working deployment in plenty of time for the deadline, and in order to test that the site worked as intended in the production environment as well as on my development server.
 
-I set the deployment branch to Main, and then any subsequent development was completed on a seperate branch, with a pull request only being created and merged when I was happy with the changes I had made. This reduced the chance of me accidentally pushing broken code to my production site.
+I set the deployment branch to `main`, and then any subsequent development was completed on a seperate branch, with a pull request only being created and merged when I was happy with the changes I had made. This reduced the chance of me accidentally pushing broken code to my production site.
+
+I continued to use on `development` branch throughout the project because I knew that, as I was the only collaborator and was never working directly on the main branch, that branch would never fall behind `main`.
 
 The link can be found here - [https://barns.github.io/le-repertoire/](https://barns.github.io/le-repertoire/)
 
