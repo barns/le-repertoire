@@ -14,7 +14,8 @@
     padding: 0 20px;
 }
 
-#hero-title h1 {
+#hero-title h2 {
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -23,6 +24,7 @@
     bottom: 10px;
     font-size: 32px;
     left: calc(50% - 16px);
+    color: #e1e1e1;
 }
 
 .index-section {
