@@ -1,131 +1,64 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Le Répertoire School of Cooking
+Le Répertoire is a cooking school which offers a range of classes in cooking different cuisines for students of a range of different abilities.
 
-Welcome Barnaby Taylor,
+Users of this website will be able to find all the information they need to know about Le Répertoire including the classes offered and their schedules, pricing, a gallery of student-created food, and how to sign up for classes. The site is targetted towards people who may be interested in learning to cook, or who already have an interest in cooking but want to improve their skills.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+## Design
+### Design Philisophy
+My aim in the visual design of the site was to reflect the elegance of fine dining. I made use of a simple greyscale colour scheme for text elements, whilst using visually striking images of food in colour to create visual interest.
 
-## Gitpod Reminders
+The index page in particular is leans into this by presenting a full-height image of a delicious-looking plate of food, with the only other elements being a title and sub-title, along with a down arrow at the bottom of the page to help users to understand that they can scroll down to see more. I considered using content-peeking here but I really wanted to stick to the idea of keeping the image taking up the full height of the viewport.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+I originally intended to leave the header / nav bar off this page which would have better fit with my design vision, but I didn't want to sacrifice usability and the ability for users to quickly and easily find the information they want. Therefore I chose to keep the header consistent across each page.
 
-`python3 -m http.server`
+I sourced high-resolution, visually striking images from [Unsplash](https://unsplash.com/) which has a permissive license allowing both commercial and non-commercial use with no permission. I have credited the photographers in this README.
 
-A blue button should appear to click: _Make Public_,
+### Responsiveness
+I used a mobile-first process where I developed the site first to display properly on mobile devices, and then added media queries to scale-up where needed if the mobile site did not display properly on tablet, laptop and desktop devices.
 
-Another blue button should appear to click: _Open Browser_.
+I used optimised images in a .webp format and served different-sized images to users based on the size of their display. Because of the mobile-first design, the default image served is the smallest available, and then media queries were used to serve larger images to devices with larger screens. As a general rule, for images expected to take up the whole width of the viewport (such as the index hero image), I used the following sizes:
+- Small (sm) 575px wide
+- Medium (md) 767px wide
+- Large (lg) 1439px wide
+- Extra large (xl) 1920px wide
+- Original (og) original resolution to account for extremely large devices such as ultrawide monitors
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+## Project Management
+I used GitHub projects to help me to manage the development of the site. Although I was working alone, this still made it easier to break down the development into manageable tasks, which I could prioritise and complete in a sensible order.
 
-A blue button should appear to click: _Make Public_,
+To further assist with prioritisation and prevent feature-creep, I broke down the project into 3 iterations and allocated each task to an iteration:
+- Iteration 1 was the minimum features required to achieve at least a pass-level grade and a functional website. This included the 3 pages that I identified as being the minimum required (index, gallery and signup), as well as the README, deployment and basic testing.
+- Iteration 2 included some "good to have" features such as two additional pages (a class schedule and an about page) which I felt would help me to acheive a higher grade
+- Iteration 3 was where I put my "nice to have if there's time" features and tasks. These were items which I felt weren't necessary to the site working as intended and providing a great user experience, but might enhance the visual design for instance. These were mostly items which would require the use of technologies not yet covered in the course, but I do already have some experience with (such as JavaScript). These features include a filter on the gallery page, and some scroll animations on the homepage when the user clicks the down arrow. I decided that if I didn't get around to completing this iteration, I would simply add these features to my "future development" section.
 
-Another blue button should appear to click: _Open Browser_.
+The GitHub project can be accessed [here](https://github.com/users/barns/projects/3/views/4).
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Deployment
+The site was deployed to GitHub pages. I deployed the site very early on in the project and then continued to deploy subsequent iterations in order to ensure that I had a working deployment in plenty of time for the deadline, and in order to test that the site worked as intended in the production environment as well as on my development server.
 
-To log into the Heroku toolbelt CLI:
+I set the deployment branch to `main`, and then any subsequent development was completed on a seperate branch, with a pull request only being created and merged when I was happy with the changes I had made. This reduced the chance of me accidentally pushing broken code to my production site.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+I continued to use on `development` branch throughout the project because I knew that, as I was the only collaborator and was never working directly on the main branch, that branch would never fall behind `main`.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+The link can be found here - [https://barns.github.io/le-repertoire/](https://barns.github.io/le-repertoire/)
 
-### Connecting your Mongo database
+## Testing
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+## Credits
 
-------
+### Content
+- All of the content for the site is original writing by me
+- Icons used across the site are from [Font Awesome](https://fontawesome.com/)
+- Code for the collapsible navbar is based on the implementation in the Code Institute walkthrough project Love Running. My deployment of that project can be found on [GitHub pages](https://barns.github.io/love-running/) and the code can be seen in [my repo](https://github.com/barns/love-running/)
+- Fonts used are both from [Google Fonts](https://fonts.google.com/)
+- I used the [WAVE accessibility checker](https://wave.webaim.org/) provided by WebAIM to test and improve the accessibility of my site
 
-## Release History
+### Images
+All images on the site are taken from Unsplash and are used under the [Unsplash license](https://unsplash.com/license). I would like to thank the following photographers for their excellent images:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**June 18, 2024,** Add Mongo back into template
-
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
-
-**May 28 2024:** Fix Mongo and Links installs
-
-**April 26 2024:** Update node version to 16
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- [emy](https://unsplash.com/@emysong_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash):
+  - "flat-lay photography of vegetable soup on white ceramic cup" (index page hero image)
+- [Serghei Savchiuc](https://unsplash.com/@serioja?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash):
+  - "a table topped with lots of pastries next to a cup of coffee" (index page)
