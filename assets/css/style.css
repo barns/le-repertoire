@@ -50,6 +50,10 @@ a.cta {
     font-size: 1.3rem;
 }
 
+section {
+    padding: 30px 15px;
+}
+
 /* Buttons and other interactive elements */
 
 button {
@@ -67,6 +71,10 @@ button {
     height: 100%;
     width: 100%;
     background-color: rgba(60, 60, 60, 0.7);
+}
+
+.no-pad {
+    padding: 0;
 }
 
 /* Header */
@@ -137,6 +145,10 @@ nav a:hover {
 }
 
 /* Main Content */
+
+main {
+    padding-top: 57px;
+}
 
 .content-container {
     /* Class to restrict the width of content within sections on wider displays */
