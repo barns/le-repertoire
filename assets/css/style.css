@@ -218,3 +218,9 @@ footer a {
 @media screen and (min-width: 1440px) {
     
 }
+
+@media (pointer: coarse) {
+    .gb-container {
+        background-attachment: inital !important;
+    }
+}
