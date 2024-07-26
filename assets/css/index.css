@@ -5,6 +5,7 @@
     height: 100vh;
     background: url("../images/index-hero-sm.webp") no-repeat fixed center center / cover;
     color: #e1e1e1;
+    padding: 0;
 }
 
 #hero-title {
