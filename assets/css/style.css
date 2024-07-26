@@ -220,7 +220,8 @@ footer a {
 }
 
 @media (pointer: coarse) {
-    .gb-container {
+    #hero,
+    #examples {
         background-attachment: inital !important;
     }
 }
