@@ -73,6 +73,59 @@ button {
 
 header {
     position: fixed;
+    width: 100%;
+    z-index: 99;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.5rem 1rem;
+    color: #e1e1e1;
+    background-color: rgba(60, 60, 60, 0.8);
+    display: flex;
+}
+
+header #logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+header #logo {
+    color: #e1e1e1;
+}
+
+nav {
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0;
+    padding: 0 1rem;
+    width: 100%;
+    display: none;
+    top: 100%;
+    background-color: inherit;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    margin-bottom: 1rem;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main Content */
