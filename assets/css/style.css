@@ -116,6 +116,14 @@ nav a {
     text-decoration: none;
 }
 
+nav a.active {
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: white;
+}
+
 #nav-toggle:checked~nav {
     display: block;
 }
