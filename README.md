@@ -48,6 +48,12 @@ The link can be found here - [https://barns.github.io/le-repertoire/](https://ba
 
 ## Credits
 
+### Content
+- All of the content for the site is original writing by me
+- Icons used across the site are from [Font Awesome](https://fontawesome.com/)
+- Code for the collapsible navbar is based on the implementation in the Code Institute walkthrough project Love Running. My deployment of that project can be found on [GitHub pages](https://barns.github.io/love-running/) and the code can be seen in [my repo](https://github.com/barns/love-running/)
+- Fonts used are both from [Google Fonts](https://fonts.google.com/)
+
 ### Images
 All images on the site are taken from Unsplash and are used under the [Unsplash license](https://unsplash.com/license). I would like to thank the following photographers for their excellent images:
 
