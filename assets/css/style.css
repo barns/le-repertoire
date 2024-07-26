@@ -57,6 +57,7 @@ section {
 /* Buttons and other interactive elements */
 
 button {
+    color: #252525;
     background-color: #e6e6e6;
     border: 1px solid #252525;
     border-radius: 4px;
