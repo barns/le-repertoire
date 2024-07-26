@@ -223,6 +223,6 @@ footer a {
 @media (pointer: coarse) {
     #hero,
     #examples {
-        background-attachment: inital !important;
+        background-attachment: initial !important;
     }
 }
