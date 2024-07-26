@@ -219,6 +219,7 @@ footer a {
     
 }
 
+/* Fixed backgrounds don't display properly on mobile devices. Set background attachment to be initial for mobile devices */
 @media (pointer: coarse) {
     #hero,
     #examples {
