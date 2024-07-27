@@ -46,6 +46,11 @@ The link can be found here - [https://barns.github.io/le-repertoire/](https://ba
 
 ## Testing
 
+## Challenges
+There were several challenges throughout the project both of a technical and non-technical nature.
+
+One of the first issues I encountered was that, although the site displayed correctly in the responsive view of both Brave (chromium-based) and Firefox browsers, when I deployed it to GitHub Pages and viewed it on my IOS device (iPhone 11 Pro), the fixed background images' `background-attachment` property not only reverted to the default `scroll` value, but also blew up the size of the image to the point that it was pixelated and it wasn't clear what the image actually showed. From research, it appears that mobile devices do not display fixed backgrounds as it's relatively processor-intensive. Fortunately due to the early continuous deployment strategy I adopted, I noticed this very quickly and was able to address it by adding a media query to the CSS which applies to mobile devices: `@media (pointer: coarse)`, and reverts the `background-attachment` property to its initial value for the affected areas.
+
 ## Credits
 
 ### Content
