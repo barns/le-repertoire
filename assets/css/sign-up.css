@@ -1,17 +1,18 @@
 #sign-up-section {
     text-align: center;
-    background: url("../images/sign-up-bg-sm.webp") no-repeat center center / cover;
+    background: url("../images/sign-up-bg-sm.webp") no-repeat fixed center center / cover;
     color: #e1e1e1;
     padding: 0;
+    min-height: 100%;
 }
 
 #sign-up-section .bg-overlay {
-    padding: 30px 15px;
+    padding: 60px 15px 30px;
 }
 
 form {
     font-size: 1.5rem;
-    margin: 1rem auto;
+    margin: 1.5rem auto 2rem;
     padding: 0 10px;
     max-width: 600px;
 }
