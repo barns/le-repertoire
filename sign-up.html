@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Le Répertoire School of Cooking, cookery school for all skill levels in Nottingham, England. French, Italian, Asian cooking, desserts and tasting masterclasses">
+    <meta name="keywords" content="le répertoire, cooking, cookery school, food, nottingham">
+    <!-- Title -->
+    <title>Le Répertoire School of Cooking</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/sign-up.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo-link">
+            <h1 id="logo">LR</h1>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navbar">
+        <label for="nav-toggle" id="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="sign-up.html" class="active">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sign-up-section">
+            <div class="bg-overlay">
+                <h2>Sign up for classes to start your cooking journey</h2>
+                <p>One of our team will take a look at your information and contact you shortly.</p>
+
+                <form method="POST" action="https://formdump.codeinstitute.net">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <h3>Which class(es) are you interested in? Select as many as you like</h3>
+                    <div id="checkbox-container">
+                        <div class="input-group checkbox-group">
+                            <label for="french-cooking">Basics of French Cooking
+                                <input type="checkbox" name="french-cooking" id="french-cooking">
+                                <span class="custom-checkbox"></span>
+                            </label>
+                        </div>
+
+                        <div class="input-group checkbox-group">
+                            <label for="asian-cooking">Mastering Asian Cooking
+                                <input type="checkbox" name="asian-cooking" id="asian-cooking">
+                                <span class="custom-checkbox"></span>
+                            </label>
+                        </div class="input-group">
+
+                        <div class="input-group checkbox-group">
+                            <label for="desserts">Desserts and Pastry
+                                <input type="checkbox" name="desserts" id="desserts">
+                                <span class="custom-checkbox"></span>
+                            </label>
+                        </div class="input-group">
+
+                        <div class="input-group checkbox-group">
+                            <label for="home-cooking">Practical Home Cooking
+                                <input type="checkbox" name="home-cooking" id="home-cooking">
+                                <span class="custom-checkbox"></span>
+                            </label>
+                        </div class="input-group">
+
+                        <div class="input-group checkbox-group">
+                            <label for="wine-pairing">Food and Wine Pairing
+                                <input type="checkbox" name="wine" id="wine-pairing">
+                                <span class="custom-checkbox"></span>
+                            </label>
+                        </div>
+
+                        <div class="input-group checkbox-group">
+                            <label for="discovering-coffee">Discovering Coffee
+                                <input type="checkbox" name="coffee" id="discovering-coffee">
+                                <span class="custom-checkbox"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="socials-container">
+            <a href="https://www.facebook.com" target="_blank"
+                aria-label="Go to our Facebook page (opens in a new tab)">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://www.x.com" target="_blank" aria-label="Go to our X page (opens in a new tab)">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank"
+                aria-label="Go to our Instagram page (opens in a new tab)">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank"
+                aria-label="Go to our YouTube channel (opens in a new tab)">
+                <i class="fa-brands fa-square-youtube"></i>
+            </a>
+        </div>
+
+        <span>&copy; Le Répertoire School of Cooking 2024</span>
+    </footer>
+
+    <!-- Import Font Awesome -->
+    <script src="https://kit.fontawesome.com/56d9cfb94c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
