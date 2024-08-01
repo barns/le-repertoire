@@ -6,6 +6,7 @@
     background: url("../images/index-hero-sm.webp") no-repeat fixed center center / cover;
     color: #e1e1e1;
     padding: 0;
+    text-align: left;
 }
 
 #hero-title {
@@ -30,7 +31,6 @@
 
 .index-section {
     padding: 30px 15px;
-    text-align: center;
 }
 
 #sign-up {

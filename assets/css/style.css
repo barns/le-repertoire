@@ -38,11 +38,13 @@ p {
     margin-bottom: 1rem;
 }
 
-a.link-light {
+a.link-light,
+a.link-light:visited {
     color: #e1e1e1;
 }
 
-a.link-dark {
+a.link-dark,
+a.link-dark:visited {
     color: #252525;
 }
 
@@ -67,6 +69,10 @@ button {
 }
 
 /* Sections and containers */
+
+section {
+    text-align: center;
+}
 
 .bg-overlay {
     height: 100%;
@@ -222,7 +228,8 @@ footer a {
 /* Fixed backgrounds don't display properly on mobile devices. Set background attachment to be initial for mobile devices */
 @media (pointer: coarse) {
     #hero,
-    #examples {
+    #examples,
+    #sign-up-section {
         background-attachment: initial !important;
     }
 }
