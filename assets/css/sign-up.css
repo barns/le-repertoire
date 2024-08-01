@@ -1,5 +1,12 @@
 #sign-up-section {
     text-align: center;
+    background: url("../images/sign-up-bg-sm.webp") no-repeat center center / cover;
+    color: #e1e1e1;
+    padding: 0;
+}
+
+#sign-up-section .bg-overlay {
+    padding: 30px 15px;
 }
 
 form {
@@ -109,6 +116,10 @@ input[type="submit"]:active {
 }
 
 @media screen and (min-width: 576px) {
+    #sign-up-section {
+        background-image: url("../images/sign-up-bg-md.webp");
+    }
+
     form {
         margin-top: 2rem;
     }
@@ -129,6 +140,10 @@ input[type="submit"]:active {
 }
 
 @media screen and (min-width: 768px) {
+    #sign-up-section {
+        background-image: url("../images/sign-up-bg-lg.webp");
+    }
+
     #checkbox-container {
         column-count: 2;
     }
@@ -143,5 +158,19 @@ input[type="submit"]:active {
 
     .checkbox-group:nth-child(n+4) {
         text-align: right;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #sign-up-section {
+        background-image: url("../images/sign-up-bg-xl.webp");
+    }
+}
+
+/* Breakpoint chosen so that the 1920px wide images are served for
+1920px wide displays with this being such a common size */
+@media screen and (min-width: 1921px) {
+    #sign-up-section {
+        background-image: url("../images/sign-up-bg-og.webp");
     }
 }
